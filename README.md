@@ -37,7 +37,7 @@ Open your terminal and run the following commands:
 
 ## Requirements
 
-This plugin requires Craft CMS 4.4 or later, and PHP 8.0.2 or later.
+This plugin requires Craft CMS 4.4+, and PHP >=8.0.2 or Craft CMS 5.0+, and PHP >=8.2.
 
 ---
 
