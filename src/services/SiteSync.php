@@ -98,7 +98,7 @@ class SiteSync extends Component
         // ignore elements without content 
         if (
             !$element::isLocalized() ||
-            !$element::hasContent() ||
+            !$element->getFieldLayout() ||
             $element->propagating ||
             $this->isQueued($element)
         ) {
