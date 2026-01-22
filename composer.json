@@ -16,8 +16,8 @@
         "rss": "https://github.com/miranj/craft-auto-translator/releases.atom"
     },
     "require": {
-        "php": ">=8.0.2 || >=8.2",
-        "craftcms/cms": "^4.4.0 || ^5.0.0",
+        "php": "^8.0.2 || ^8.2",
+        "craftcms/cms": "^4.4 || ^5.0",
         "deeplcom/deepl-php": "^1.5",
         "google/cloud-translate": "^1.14"
     },
@@ -43,9 +43,6 @@
     },
     "config": {
         "sort-packages": true,
-        "platform": {
-            "php": "8.0.2 || 8.2"
-        },
         "allow-plugins": {
             "yiisoft/yii2-composer": true,
             "craftcms/plugin-installer": true,

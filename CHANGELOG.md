@@ -2,10 +2,9 @@
 
 Release notes for the Auto Translator Craft CMS plugin.
 
-## Unreleased 1.0.0
+## Unreleased 0.2.0
 
-- Now compatible with PHP 8.2.0+.
-- Now compatible with Craft 5.0.0+.
+- Added support for Craft 5.
 
 ## Unreleased 0.1.0
 
