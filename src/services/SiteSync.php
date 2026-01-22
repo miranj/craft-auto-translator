@@ -92,13 +92,23 @@ class SiteSync extends Component
             return;
         }
         
+        $hasContent = true;
+        // Craft 5+
+        if (method_exists($element, 'getFieldLayout')) {
+            $hasContent = (bool) $element->getFieldLayout();
+        }
+        // Craft 4 fallback
+        elseif (method_exists($element, 'hasContent')) {
+            $hasContent = (bool) $element::hasContent();
+        }
+
         // ignore non-localized elements
         // ignore propagating elements
         // ignore queued elements
         // ignore elements without content 
         if (
             !$element::isLocalized() ||
-            !$element->getFieldLayout() ||
+            !$hasContent ||
             $element->propagating ||
             $this->isQueued($element)
         ) {
