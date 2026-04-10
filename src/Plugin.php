@@ -35,6 +35,7 @@ class Plugin extends BasePlugin
     ];
     
     public const DEFAULT_FIELD_TRANSLATORS = [
+        fieldtranslators\CKEditorFieldTranslator::class,
         fieldtranslators\HyperFieldTranslator::class,
         fieldtranslators\MatrixFieldTranslator::class,
         fieldtranslators\TextFieldTranslator::class,
