@@ -26,8 +26,7 @@ class CKEditorFieldTranslator extends TextFieldTranslator
     {
         // sanity check
         $value = $sourceElement->getFieldValue($field->handle);
-        
-        if (!static::canTranslate($field)) {
+        if (!$value || !static::canTranslate($field)) {
             return $value;
         }
         
