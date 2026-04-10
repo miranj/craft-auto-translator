@@ -8,7 +8,7 @@ use craft\ckeditor\Field as CKEditor;
 use miranj\autotranslator\Plugin;
 
 /**
-* Vizy Field Translator
+* CKEditor Field Translator
 */
 class CKEditorFieldTranslator extends TextFieldTranslator
 {
